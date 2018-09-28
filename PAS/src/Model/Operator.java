@@ -20,4 +20,9 @@ public class Operator extends Employee {
         return super.getFirstName() + " " + super.getLastName() + ", operator";
     }
 
+    @Override
+    public boolean authenticate(String empID, String password) {
+        return super.getCredential().verifyLogin(empID, password);
+    }
+
 }
