@@ -25,6 +25,10 @@ public class Credential implements Login {
         
         return false;      
     }
+    
+    public String getEmpID(){
+        return this.empID;
+    }
    
     
 }

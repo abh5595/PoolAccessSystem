@@ -8,10 +8,12 @@ public class Operator extends Employee {
 
     public Operator(String newFirstName, String newLastName) {
         super(newFirstName, newLastName);
+        /*
         roles.add(RoleEnum.LOOKUP);
         roles.add(RoleEnum.CHECKIN);
         roles.add(RoleEnum.CHECKOUT);
         roles.add(RoleEnum.VIEW_REPORTS);
+        */
 
     }
 
