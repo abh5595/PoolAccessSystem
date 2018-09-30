@@ -7,6 +7,7 @@ package Model.Reports;
 
 import Model.Pool;
 import Model.Swimmer;
+import java.io.FileNotFoundException;
 import java.text.SimpleDateFormat;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
@@ -36,7 +37,7 @@ public class ReportVisitsTest {
     }
     
     @Before
-    public void setUpInstance(){
+    public void setUpInstance() throws FileNotFoundException{
      pool = new Pool();   
      Swimmer swimmerJones = new Swimmer("Jones");
      pool.addSwimmer(swimmerJones);  

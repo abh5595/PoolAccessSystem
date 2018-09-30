@@ -8,6 +8,7 @@ package Model.Reports;
 import Model.Pool;
 import Model.Swimmer;
 import Model.Visit;
+import java.io.FileNotFoundException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -40,7 +41,7 @@ public class ReportTest {
     }
     
     @Before
-    public void setUpInstance(){
+    public void setUpInstance() throws FileNotFoundException{
      pool = new Pool();
      instance = pool.getReport();
      df = new SimpleDateFormat("yyyy-MM-dd");
